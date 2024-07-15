@@ -1095,7 +1095,7 @@ footer a {
 }
 
 @media screen and (max-width: 1070px) {
-  /* ===========Header Navigation Menu============  */
+  /* ===========Header Navigation Menu============ */
   .navigation {
     position: fixed;
     width: 100%;
@@ -1119,7 +1119,7 @@ footer a {
   .nav-items {
     position: relative;
     background: var(--modal-bg-color);
-    width: 600px;
+    width: 90%;
     max-width: 600px;
     display: flex;
     align-items: center;
@@ -1137,7 +1137,7 @@ footer a {
   }
 
   .nav-items a {
-    margin: 15px 50px;
+    margin: 15px 0;
   }
 
   .nav-close-btn {
@@ -1165,17 +1165,18 @@ footer a {
     display: block;
   }
 
-  /* ===========Home Section============  */
+  /* ===========Home Section============ */
   .home .home-container .info {
     font-size: 0.85rem;
   }
 
-  /* ===========About Section============  */
+  /* ===========About Section============ */
   .about .container .content {
     display: grid;
     width: 100%;
     row-gap: 20px;
   }
+
   .about-img img {
     min-width: 0;
     width: 100%;
@@ -1225,7 +1226,7 @@ footer a {
     width: 100%;
   }
 
-  .contact-form .firs-row {
+  .contact-form .first-row {
     flex-direction: column;
   }
 
@@ -1235,6 +1236,9 @@ footer a {
 
   footer .footer-container {
     flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
   }
 
   .footer-container .about,
@@ -1244,6 +1248,8 @@ footer a {
     align-items: center;
     flex-direction: column;
     margin-bottom: 50px;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .footer-container .info ul {
@@ -1288,7 +1294,6 @@ footer a {
   .home-container .home-img img {
     width: 65%;
     transform: translate(80px, -180px);
-    
   }
 
   .home .home-container .info {
@@ -1311,59 +1316,77 @@ footer a {
   .contact-card .contact-btn .btn {
     font-size: 0.8rem;
   }
+}
 
-  @media screen and (max-width: 480px) {
-    /* ===========Header Navigation Menu============ */
-    .nav-items {
-      width: 90%;
-      padding: 20px;
-      margin: 10px;
-    }
-  
-    .nav-items a {
-      margin: 10px 0;
-    }
-  
-    .nav-close-btn {
-      width: 30px;
-      height: 30px;
-    }
-  
-    .nav-menu-btn {
-      width: 30px;
-      height: 30px;
-    }
-  
-    /* ===========Home Section============ */
-    .home .home-container .info {
-      font-size: 0.75rem;
-    }
-  
-    /* ===========About Section============ */
-    .about .container .content {
-      row-gap: 15px;
-    }
-  
-    .contact-card .title {
-      font-size: 0.7rem;
-      line-height: 35px;
-    }
-  
-    .contact-card .contact-btn .btn {
-      font-size: 0.7rem;
-    }
-  
-    footer .footer-container .about,
-    footer .footer-container .info {
-      margin-bottom: 40px;
-    }
-  
-    .footer-container .info ul li {
-      margin: 3px 0;
-    }
-  
-    .footer-container .hr {
-      margin: 8px 0 18px;
-    }
+@media screen and (max-width: 480px) {
+  /* ===========Header Navigation Menu============ */
+  .nav-items {
+    width: 90%;
+    padding: 20px;
+    margin: 10px;
+  }
+
+  .nav-items a {
+    margin: 10px 0;
+  }
+
+  .nav-close-btn {
+    width: 30px;
+    height: 30px;
+  }
+
+  .nav-menu-btn {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* ===========Home Section============ */
+  .home .home-container .info {
+    font-size: 0.75rem;
+  }
+
+  /* ===========About Section============ */
+  .about .container .content {
+    row-gap: 15px;
+  }
+
+  .contact-card .title {
+    font-size: 0.7rem;
+    line-height: 35px;
+  }
+
+  .contact-card .contact-btn .btn {
+    font-size: 0.7rem;
+  }
+
+  /* ===========Services Section============ */
+  .services .card {
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+  }
+
+  /* ===========Footer Section============ */
+  footer .footer-container {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .footer-container .about,
+  .footer-container .info {
+    margin-bottom: 30px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .footer-container .info ul {
+    width: 100%;
+    padding: 0;
+  }
+
+  .footer-container .info ul li {
+    margin: 3px 0;
+    width: 100%;
   }
 }
